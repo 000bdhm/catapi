@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/api/catapi" },
+    { "source": "/catapi", "destination": "/api/catapi" },
+    { "source": "/catapi/:path*", "destination": "/api/catapi" },
+    { "source": "/catbot", "destination": "/api/catbot" }
+  ],
+  "functions": {
+    "api/interactions.js": { "maxDuration": 15 }
+  }
+}
